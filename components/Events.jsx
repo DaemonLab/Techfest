@@ -42,6 +42,7 @@ function Events() {
   const { ref, inView } = useInView();
   const animation = useAnimation();
   const animation2 = useAnimation();
+  const animation3 = useAnimation();
   useEffect(() => {
     if (inView) {
       animation.start({
@@ -63,6 +64,16 @@ function Events() {
           bounce: 0.1,
         },
       });
+      animation3.start({
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: {
+          type: "spring",
+          duration: 1.5,
+          bounce: 0.1,
+        },
+      });
     }
     if (!inView) {
       animation.start({
@@ -72,6 +83,11 @@ function Events() {
       animation2.start({
         opacity: 0,
         x: "100vw",
+      });
+      animation3.start({
+        opacity: 0,
+        y: "-5vw",
+        scale: 0.5,
       });
     }
   });
@@ -83,9 +99,12 @@ function Events() {
       className="flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
     >
       <motion.div className="bg-[#faf3ea] h-100">
-        <h1 className="text-[#001233] text-5xl text-center mb-10 bg-[#faf3ea]">
+        <motion.h1
+          className="text-[#001233] text-5xl text-center mb-10 bg-[#faf3ea]"
+          animate={animation3}
+        >
           Events
-        </h1>
+        </motion.h1>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-4">
           <motion.div
             className="bg-[#111b53] w-[300px] h-[400px] shadow-2xl text-white"

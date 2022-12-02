@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Button from "./Button";
 import Navbar from "./Navbar";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 
 function HomePage() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+  const animation2 = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.1,
+        },
+      });
+      animation2.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 1.4,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        y: "-10vw",
+        opacity: 0,
+      });
+      animation2.start({
+        opacity: 0,
+      });
+    }
+  });
   return (
     <>
       <Navbar></Navbar>
@@ -14,11 +48,16 @@ function HomePage() {
         exit={{ opacity: 0 }}
         id="home"
       >
-        <div className="text-[#FF595A] flex items-center justify-center ml-8">
+        <div
+          className="text-[#FF595A] flex items-center justify-center ml-8"
+          ref={ref}
+        >
           <div>
-            <h1 className="text-6xl font-bold">Techfest, IIT Indore</h1>
+            <motion.h1 className="text-6xl font-bold" animate={animation}>
+              Techfest, IIT Indore
+            </motion.h1>
             <h1 className="text-5xl mb-10">2022-23</h1>
-            <p className="text-white">
+            <motion.p className="text-white" animate={animation2}>
               Sed semper nulla a pellentesque sollicitudin. Proin ac felis at
               lectus condimentum venenatis. Vivamus condimentum a mi a
               dignissim. Suspendisse purus eros, dapibus sed condimentum non,
@@ -26,7 +65,7 @@ function HomePage() {
               auctor. Nulla in nibh magna. Cras eu dui id lorem porta
               condimentum. Vestibulum ornare metus ac odio efficitur, egestas
               viverra velit venenatis. Sed non ips
-            </p>
+            </motion.p>
             <div className="mt-8">
               <Button value="Register" ml="0"></Button>
             </div>

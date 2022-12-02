@@ -6,11 +6,12 @@ function Sponsors() {
   const { ref, inView } = useInView();
   const animation = useAnimation();
   const animation2 = useAnimation();
+  const animation3 = useAnimation();
 
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {
           type: "spring",
@@ -20,11 +21,22 @@ function Sponsors() {
       });
 
       animation2.start({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {
           type: "spring",
           duration: 1,
+          bounce: 0.1,
+        },
+      });
+
+      animation3.start({
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: {
+          type: "spring",
+          duration: 1.5,
           bounce: 0.1,
         },
       });
@@ -32,11 +44,16 @@ function Sponsors() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        x: "-100vw",
+        y: "-20vw",
       });
       animation2.start({
         opacity: 0,
-        x: "100vw",
+        y: "20vw",
+      });
+      animation3.start({
+        opacity: 0,
+        y: "-10vw",
+        scale: 0.5,
       });
     }
   });
@@ -55,9 +72,12 @@ function Sponsors() {
         className="bg-[#faf3ea] h-100"
         ref={ref}
       >
-        <h1 className="text-[#001233] text-5xl text-center mb-10 bg-[#faf3ea]">
+        <motion.h1
+          className="text-[#001233] text-5xl text-center mb-10 bg-[#faf3ea]"
+          animate={animation3}
+        >
           Sponsors
-        </h1>
+        </motion.h1>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-4">
           <motion.div
             className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
@@ -71,14 +91,17 @@ function Sponsors() {
           <motion.div
             className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
+            animate={animation2}
           ></motion.div>
           <motion.div
             className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
+            animate={animation}
           ></motion.div>
           <motion.div
             className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
+            animate={animation2}
           ></motion.div>
         </div>
       </motion.div>
