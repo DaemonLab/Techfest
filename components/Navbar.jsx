@@ -3,9 +3,9 @@ import Link from "next/link";
 import Button from './Button';
 
 const links = [
-    { name: "Home", link: "/" },
-    { name: "About Us", link: "/about" },
-    { name: "Events", link: "/events" },
+    { name: "Home", link: "#home" },
+    { name: "About Us", link: "#about" },
+    { name: "Events", link: "#events" },
     { name: "Sponsors", link: "#sponsors" },
   ];
 
@@ -32,7 +32,7 @@ function Navbar() {
           >
             {links.map((link) => (
               <li className="md:ml-8 text-xl md:my-0 my-7">
-                <Link className="text-white hover:text-gray-400 duration-500 font-robotoCondensed" href={link.link}> {link.name}</Link>
+                <Link className="text-[#CAC0B3] hover:text-gray-400 duration-500 font-robotoCondensed" href={link.link}> {link.name}</Link>
               </li>
             ))}
             <div onClick={registerHandler} className="ml-5">

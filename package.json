@@ -9,12 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.20.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.16",
+    "@mui/styled-engine-sc": "^5.10.16",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.4",
-    "framer-motion": "^7.6.7",
+    "framer-motion": "^7.6.17",
+    "jquery": "^3.6.1",
     "next": "13.0.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.4.1",
+    "react-is": "^18.2.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.9.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

@@ -7,6 +7,7 @@ import HomePage from "../components/HomePage";
 import Sponsors from "../components/Sponsors";
 import Events from "../components/Events";
 import About from "../components/About";
+import Footer from "../components/Footer";
 export default function Home() {
   // const [open, setOpen] = useState(false);
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Events></Events>
       <About></About>
       <Sponsors></Sponsors>
+      <Footer></Footer>
     </>
   );
 }

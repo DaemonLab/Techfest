@@ -9,7 +9,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #0d1129;
 }
 
 a {
@@ -27,6 +26,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #001233;
   }
 }
