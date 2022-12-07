@@ -42,14 +42,14 @@ function HomePage() {
     <>
       <Navbar></Navbar>
       <motion.div
-        className="grid h-screen w-screen md:grid-cols-2 overflow-hidden snap-mandatory bg-[#001233]"
+        className="grid h-screen w-screen md:grid-cols-2 overflow-hidden snap-mandatory bg-[#1d1836]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         id="home"
       >
         <div
-          className="text-[#FF595A] flex items-center justify-center ml-8"
+          className="text-[#06d0d9] flex items-center justify-center ml-8"
           ref={ref}
         >
           <div>

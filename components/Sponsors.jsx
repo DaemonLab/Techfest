@@ -80,26 +80,26 @@ function Sponsors() {
         </motion.h1>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-4">
           <motion.div
-            className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
+            className="bg-[#1d1836] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
             animate={animation}
           ></motion.div>
           <motion.div
-            className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
+            className="bg-[#1d1836] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
           ></motion.div>
           <motion.div
-            className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
+            className="bg-[#1d1836] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
             animate={animation2}
           ></motion.div>
           <motion.div
-            className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
+            className="bg-[#1d1836] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
             animate={animation}
           ></motion.div>
           <motion.div
-            className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
+            className="bg-[#1d1836] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
             animate={animation2}
           ></motion.div>
