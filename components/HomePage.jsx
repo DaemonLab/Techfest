@@ -43,13 +43,13 @@ function HomePage() {
     <>
       <Navbar></Navbar>
       <motion.div
-        className="grid h-screen w-screen md:grid-cols-2 overflow-hidden snap-mandatory bg-[#001233]"
+        className="grid h-screen w-screen overflow-hidden snap-mandatory bg-[#001233]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         id="home"
       >
-        <div
+        {/* <div
           className="text-[#FF595A] flex items-center justify-center ml-8"
           ref={ref}
         >
@@ -71,7 +71,7 @@ function HomePage() {
               <Button value="Register" ml="0"></Button>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="w-100 h-100">
           <Cube></Cube>
         </div>
