@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Button from "./Button";
 import Navbar from "./Navbar";
+import Cube from "./Cube";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 
@@ -71,7 +72,9 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="w-100 h-100">
+          <Cube></Cube>
+        </div>
       </motion.div>
     </>
   );
