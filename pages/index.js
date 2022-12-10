@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import styles from "../styles/Home.module.css";
 
 import HomePage from "../components/HomePage";
+import MainPage from "../components/Mainpage";
 import Sponsors from "../components/Sponsors";
 import Events from "../components/Events";
 import About from "../components/About";
@@ -13,7 +14,8 @@ export default function Home() {
 
   return (
     <>
-      <HomePage></HomePage>
+      {/* <HomePage></HomePage> */}
+      <MainPage></MainPage>
       <Events></Events>
       <About></About>
       <Sponsors></Sponsors>

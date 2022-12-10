@@ -82,7 +82,7 @@ function Events() {
       });
       animation2.start({
         opacity: 0,
-        x: "100vw",
+        x: "10vw",
       });
       animation3.start({
         opacity: 0,
@@ -119,10 +119,10 @@ function Events() {
             className="bg-[#111b53] w-[300px] h-[400px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
             onClick={() => handleOpen(1)}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4 }}
-            // animate={animation}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ duration: 0.4 }}
+            animate={animation2}
           ></motion.div>
           <motion.div
             className="bg-[#111b53] w-[300px] h-[400px] shadow-2xl text-white"

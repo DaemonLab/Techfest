@@ -849,7 +849,16 @@
         0
       ],
       "name": "lght",
-      "pbrMetallicRoughness": {}
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          1,
+          1 ,
+          1
+        ],
+        "metallicFactor": 0.6228571534156799,
+        "roughnessFactor": 0.19428572058677673
+      }
     },
     {
       "doubleSided": true,

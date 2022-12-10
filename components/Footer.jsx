@@ -31,6 +31,7 @@ function Footer() {
       </div> */}
       <div></div>
     </motion.div>
+    
   );
 }
 

@@ -87,6 +87,7 @@ function Sponsors() {
           <motion.div
             className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"
             whileHover={{ scale: 1.05 }}
+            animate={animation2}
           ></motion.div>
           <motion.div
             className="bg-[#111b53] w-[300px] h-[300px] shadow-2xl text-white"

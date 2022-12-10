@@ -8,7 +8,6 @@ import * as THREE from "three";
 import window from "global";
 import { motion } from "framer-motion";
 import Button from "./Button";
-
 const delta = 0.017;
 let mixer;
 let mixer_reverse;
@@ -85,10 +84,10 @@ export default function Cube() {
         <Canvas
           shadows
           dpr={[1, 2]}
-          camera={{ position: [4, 4, 16], fov: 50 }}
+          camera={{ position: [0.5, -3, 12], fov: 80}}
           className="h-100 w-100"
         >
-          <ambientLight intensity={1} />
+          <ambientLight intensity={0} />
           <spotLight
             intensity={0.5}
             angle={0.1}
@@ -101,10 +100,11 @@ export default function Cube() {
             {/* To add environment effect to the model */}
             <Environment preset="city" />
           </Suspense>
-          <OrbitControls enableZoom={false} autoRotate />
+          <OrbitControls enableZoom={false} />
+          {/* <OrbitControls enableZoom={false} autoRotate /> */}
         </Canvas>
       </div>
-      <div className="text-[#FF595A] flex items-center justify-center ml-8 z-10">
+      {/* <div className="text-[#FF595A] flex items-center justify-center ml-8 z-10">
         <div>
           <motion.h1 className="text-6xl font-bold">
             Techfest, IIT Indore
@@ -123,7 +123,7 @@ export default function Cube() {
             <Button value="Register" ml="0"></Button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
