@@ -4,22 +4,22 @@ import Button from "../components/Button";
 import styles from "../styles/Home.module.css";
 
 import HomePage from "../components/HomePage";
-import MainPage from "../components/Mainpage";
 import Sponsors from "../components/Sponsors";
 import Events from "../components/Events";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import Cube from "../components/Cube";
 export default function Home() {
   // const [open, setOpen] = useState(false);
 
   return (
     <>
-      {/* <HomePage></HomePage> */}
-      <MainPage></MainPage>
+      <Cube></Cube>
+      {/* <HomePage></HomePage>
       <Events></Events>
       <About></About>
       <Sponsors></Sponsors>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </>
   );
 }
