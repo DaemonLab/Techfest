@@ -28,7 +28,7 @@ function Particle() {
           },
           particles: {
             number: {
-              value: 80,
+              value: 29,
               density: {
                 enable: true,
                 value_area: 800,

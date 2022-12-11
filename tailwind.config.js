@@ -10,9 +10,11 @@ module.exports = {
       fontFamily: {
         robotoCondensed: ["Roboto Condensed", "sans-serif"],
         ubuntu: ["Ubuntu", "sans-serif"],
+        jetbrains: ["JetBrains Mono", "monospace"],
       },
     },
     screens: {
+      xsm:"340px",
       sm: "720px",
       md: "1024px",
       lg: "1280px",

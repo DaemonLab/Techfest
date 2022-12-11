@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Carousel from "./Carousel";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import Button from "./Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useInView } from "react-intersection-observer";
@@ -65,12 +65,10 @@ function Events() {
         },
       });
       animation3.start({
-        y: 0,
-        opacity: 1,
-        scale: 1,
+        x: 0,
         transition: {
           type: "spring",
-          duration: 1.5,
+          duration: 1,
           bounce: 0.1,
         },
       });
@@ -78,7 +76,7 @@ function Events() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        x: "-100vw",
+        x: "-10vw",
       });
       animation2.start({
         opacity: 0,
@@ -86,8 +84,8 @@ function Events() {
       });
       animation3.start({
         opacity: 0,
-        y: "-5vw",
-        scale: 0.5,
+        x: "-5vw",
+        // scale: 0.5,
       });
     }
   });
@@ -96,52 +94,126 @@ function Events() {
     <motion.Reactdiv
       id="sponsors"
       ref={ref}
-      className="flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
+      className="h-screen w-screen bg-[#faf3ea]"
     >
-      <motion.div className="bg-[#faf3ea] h-100">
+      <motion.div className="bg-[#faf3ea] h-screen m-6">
         <motion.h1
-          className="text-[#001233] text-5xl text-center mb-10 bg-[#faf3ea]"
-          animate={animation3}
+          className="text-white text-9xl mb-10 ml-10"
+          animate={animation}
+          style={{
+            fontFamily: "valorax Regular",
+            fontWeight: "normal",
+            fontSize: "100px",
+          }}
         >
-          Events
+          EVENTS
         </motion.h1>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-4">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8">
           <motion.div
-            className="bg-[#111b53] w-[300px] h-[400px] shadow-2xl text-white"
-            whileHover={{ scale: 1.05 }}
-            onClick={() => handleOpen(0)}
+            className="flux bg-[#111b53] w-100 h-[400px] shadow-2xl text-white rounded-lg border-[3px] p-0"
+            whileHover={{ y: "-10px" }}
             animate={animation}
             // initial={{ opacity: 0 }}
             // animate={{ opacity: 1 }}
             // transition={{ duration: 0.4 }}
-          ></motion.div>
+          >
+            <h1
+              className="p-0 w-100 text-center m-0 text-sm mt-10"
+              style={{
+                fontFamily: "valorax Regular",
+                fontWeight: "normal",
+                fontSize: "30px",
+              }}
+            >
+              competitions
+            </h1>
+            <p
+              style={{
+                fontFamily: ["JetBrains Mono", "monospace"],
+                fontSize: "20px",
+                lineHeight: "1.5",
+              }}
+              className="p-5 mt-6"
+            >
+              NOW IS THE PERFECT TIME TO PREPARE FOR HACKTOBERFEST. GET A JUMP
+              START BY FINDING PROJECTS TO CONTRIBUTE TO, ADDING THE
+              ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
+              WITH GIT.
+            </p>
+            <div className="mt-8 text-sm w-100 text-center">
+              <Button value="KNOW MORE!" ml="0"></Button>
+            </div>
+          </motion.div>
           <motion.div
-            className="bg-[#111b53] w-[300px] h-[400px] shadow-2xl text-white"
-            whileHover={{ scale: 1.05 }}
-            onClick={() => handleOpen(1)}
+            className="flux bg-[#111b53] w-100 h-[400px] shadow-2xl text-white rounded-lg border-[3px] p-0"
+            whileHover={{ y: "-10px" }}
+            animate={animation}
             // initial={{ opacity: 0 }}
             // animate={{ opacity: 1 }}
             // transition={{ duration: 0.4 }}
+          >
+            <h1
+              className="p-0 w-100 text-center m-0 text-sm mt-10"
+              style={{
+                fontFamily: "valorax Regular",
+                fontWeight: "normal",
+                fontSize: "30px",
+              }}
+            >
+              workshops
+            </h1>
+            <p
+              style={{
+                fontFamily: ["JetBrains Mono", "monospace"],
+                fontSize: "20px",
+                lineHeight: "1.5",
+              }}
+              className="p-5 mt-6"
+            >
+              NOW IS THE PERFECT TIME TO PREPARE FOR HACKTOBERFEST. GET A JUMP
+              START BY FINDING PROJECTS TO CONTRIBUTE TO, ADDING THE
+              ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
+              WITH GIT.
+            </p>
+            <div className="mt-8 text-sm w-100 text-center">
+              <Button value="KNOW MORE!" ml="0"></Button>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flux bg-[#111b53] w-100 h-[400px] shadow-2xl text-white rounded-lg border-[3px] p-0"
+            whileHover={{ y: "-10px" }}
             animate={animation2}
-          ></motion.div>
-          <motion.div
-            className="bg-[#111b53] w-[300px] h-[400px] shadow-2xl text-white"
-            whileHover={{ scale: 1.05 }}
-            onClick={() => handleOpen(2)}
-            animate={animation2}
-          ></motion.div>
-          <motion.div
-            className="bg-[#111b53] w-[300px] h-[400px] shadow-2xl text-white"
-            whileHover={{ scale: 1.05 }}
-            onClick={() => handleOpen(3)}
-            animate={animation}
-          ></motion.div>
-          <motion.div
-            className="bg-[#111b53] w-[300px] h-[400px] shadow-2xl text-white"
-            whileHover={{ scale: 1.05 }}
-            onClick={() => handleOpen(4)}
-            animate={animation}
-          ></motion.div>
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ duration: 0.4 }}
+          >
+            <h1
+              className="p-0 w-100 text-center m-0 text-sm mt-10"
+              style={{
+                fontFamily: "valorax Regular",
+                fontWeight: "normal",
+                fontSize: "30px",
+              }}
+            >
+              tech talks & speakers
+            </h1>
+            <p
+              style={{
+                fontFamily: ["JetBrains Mono", "monospace"],
+                fontSize: "20px",
+                lineHeight: "1.5",
+              }}
+              className="p-5 mt-6"
+            >
+              NOW IS THE PERFECT TIME TO PREPARE FOR HACKTOBERFEST. GET A JUMP
+              START BY FINDING PROJECTS TO CONTRIBUTE TO, ADDING THE
+              ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
+              WITH GIT.
+            </p>
+            <div className="mt-8 text-sm w-100 text-center">
+              <Button value="KNOW MORE!" ml="0"></Button>
+            </div>
+          </motion.div>
         </div>
       </motion.div>
       <motion.div

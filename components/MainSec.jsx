@@ -94,22 +94,39 @@ function MainSec() {
 
   return (
     <motion.div
-      className="grid mt-[25%] mb-[25%] w-screen overflow-hidden snap-mandatory bg-[#001233] z-50"
+      className="grid mt-[1%] mb-[10%] w-screen overflow-hidden snap-mandatory bg-[#001233] z-50 h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       id="home"
       ref={ref}
     >
-      <div className="text-[#FF595A] flex items-center justify-center ml-8 z-50">
+      <div className="text-[#FF595A] flex items-center justify-center ml-8 z-0">
         <div>
           <motion.div animate={animation}>
-            <h1 className="text-6xl font-bold z-50 text-white">
-              Techfest, IIT Indore
+            <h1
+              className="text-9xl font-bold z-50 text-white"
+              style={{
+                fontFamily: "valorax Regular",
+                fontWeight: "normal",
+                fontSize: "200px",
+              }}
+            >
+              TECHFEST
+            </h1>
+            <h1
+              className="text-9xl font-bold z-50 text-white text-center"
+              style={{
+                fontFamily: "valorax Regular",
+                fontWeight: "normal",
+                fontSize: "70px",
+              }}
+            >
+              2022-23
             </h1>
           </motion.div>
 
-          <motion.h1 className="text-5xl mb-10 z-50">2022-23</motion.h1>
+          {/* <motion.h1 className="text-5xl mb-10 z-50">2022-23</motion.h1>
           <motion.p
             className="text-white"
             style={{ zIndex: 999 }}
@@ -122,7 +139,7 @@ function MainSec() {
             nibh magna. Cras eu dui id lorem porta condimentum. Vestibulum
             ornare metus ac odio efficitur, egestas viverra velit venenatis. Sed
             non ips
-          </motion.p>
+          </motion.p> */}
           <div className="mt-8">
             <Button value="Register" ml="0"></Button>
           </div>
