@@ -102,7 +102,7 @@ body {
     color: #f8fafa;
   }
 }
-
+/* Buttons css */
 /* @charset "UTF-8"; */
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
@@ -313,4 +313,161 @@ h2 {
 .five b {
   color: #F764FF;
   font-weight: 700;
+}
+
+/* Sponsors */
+
+.font-valorax{
+  font-family: 'valorax Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('valorax Regular'), url('../public/Valorax-lg25V.woff') format('woff');
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow ease 1s;
+  transition: -webkit-box-shadow ease 1s;
+  transition: box-shadow ease 1s;
+  transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;
+}
+
+.icon {
+  position: relative;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  will-change: transform;
+}
+
+.sponsor_text {
+  position: relative;
+  font-size: 0.1rem;
+  line-height: 0.1rem;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  will-change: transform;
+  display: hidden;
+  opacity: 0;
+}
+
+.icon_bg {
+  border-radius: 100%;
+  border: 1px solid rgba(225, 227, 232, 0.18);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+          box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+  background-color: #0babb7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  will-change: transform;
+}
+
+.title {
+  position: relative;
+}
+
+.super-box:hover .box {
+/*   border: 1px solid rgba(225, 227, 232, 0.18); */
+  -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+          box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+}
+
+.super-box:hover .icon_bg {
+  -webkit-transform: translateY(-32px) scale(6);
+          transform: translateY(-32px) scale(6);
+}
+
+.super-box:hover .icon {
+  -webkit-transform: translateY(-5rem) scale(0.8);
+          transform: translateY(-5rem) scale(0.8);
+}
+.super-box:hover .sponsor_text {
+  -webkit-transform: translateY(1.5rem) scale(20);
+          transform: translateY(1.5rem) scale(20);
+          opacity: 1;
+          display: block;
+}
+
+.super-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text {
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.super-box:hover .text {
+  opacity: 0;
+  -webkit-transform: translateY(-40px) scale(.8);
+          transform: translateY(-40px) scale(.8);
+  
+}
+
+.box::after {
+  position: absolute;
+  opacity: 0;
+  font-size: 13px;
+  color: #5d6494;
+  line-height: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.super-box:hover .box::after {
+  opacity: 1;
+}
+
+.dr {
+position: absolute;
+ bottom: 16px; 
+ right: 16px;
+ width:100px;
 }
