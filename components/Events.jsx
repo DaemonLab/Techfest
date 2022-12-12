@@ -6,6 +6,7 @@ import Button from "./Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useInView } from "react-intersection-observer";
+import Router, { useRouter } from "next/router";
 
 const style = {
   position: "absolute",
@@ -31,6 +32,7 @@ const events = [
 ];
 
 function Events() {
+  const router = useRouter();
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
   const [event, setEvent] = React.useState({ eventName: "" });
@@ -43,6 +45,9 @@ function Events() {
   const animation = useAnimation();
   const animation2 = useAnimation();
   const animation3 = useAnimation();
+  const competitionsHandler = () => {
+    router.push("/competitions");
+  };
   useEffect(() => {
     if (inView) {
       animation.start({
@@ -92,13 +97,21 @@ function Events() {
 
   return (
     <motion.Reactdiv
-      id="sponsors"
+      id="events"
       ref={ref}
-      className="h-screen w-screen bg-[#faf3ea]"
+      className="h-screen w-full bg-[#faf3ea] sm:h-[4000px] xsm:h-[4000px]"
     >
-      <motion.div className="bg-[#faf3ea] h-screen m-6">
+      <motion.div
+        className="flux bg-[#111b53] w-100 h-[10px] shadow-2xl text-white rounded-lg border-[3px] p-0 mx-20 "
+        whileHover={{ y: "-10px" }}
+        animate={animation2}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // transition={{ duration: 0.4 }}
+      ></motion.div>
+      <motion.div className="bg-[#faf3ea] h-screen m-6 mt-10 pt-10 sm:h-auto xsm:h-auto">
         <motion.h1
-          className="text-white text-9xl mb-10 ml-10"
+          className="text-white text-9xl mb-10 ml-10 mt-2 text-center"
           animate={animation}
           style={{
             fontFamily: "valorax Regular",
@@ -108,9 +121,9 @@ function Events() {
         >
           EVENTS
         </motion.h1>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8">
+        <div className="grid md:grid-cols-3 sm:grid-cols-1 grid-flow-row gap-8">
           <motion.div
-            className="flux bg-[#111b53] w-100 h-[400px] shadow-2xl text-white rounded-lg border-[3px] p-0"
+            className="flux bg-[#111b53] w-100 md:h-[400px] sm: hshadow-2xl text-white rounded-lg border-[3px] p-0"
             whileHover={{ y: "-10px" }}
             animate={animation}
             // initial={{ opacity: 0 }}
@@ -140,7 +153,10 @@ function Events() {
               ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
               WITH GIT.
             </p>
-            <div className="mt-8 text-sm w-100 text-center">
+            <div
+              className="mt-8 text-sm w-100 text-center"
+              onClick={competitionsHandler}
+            >
               <Button value="KNOW MORE!" ml="0"></Button>
             </div>
           </motion.div>
@@ -175,7 +191,12 @@ function Events() {
               ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
               WITH GIT.
             </p>
-            <div className="mt-8 text-sm w-100 text-center">
+            <div
+              className="mt-8 text-sm w-100 text-center"
+              onClick={() => {
+                router.push("/workshops");
+              }}
+            >
               <Button value="KNOW MORE!" ml="0"></Button>
             </div>
           </motion.div>
@@ -210,33 +231,44 @@ function Events() {
               ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
               WITH GIT.
             </p>
-            <div className="mt-8 text-sm w-100 text-center">
+            <div
+              className="mt-8 text-sm w-100 text-center"
+              onClick={() => {
+                router.push("/talks");
+              }}
+            >
               <Button value="KNOW MORE!" ml="0"></Button>
             </div>
           </motion.div>
         </div>
+        <motion.div className="h-[50%] p-10">
+          <motion.h1
+            className="text-white text-9xl flex items-center justify-center text-center flux3 h-full text-lg"
+            animate={animation}
+            style={{
+              fontFamily: "Debug",
+              fontWeight: "600",
+              fontSize: "180px",
+              lineHeight: 1,
+            }}
+          >
+            TECH IT or LEAVE IT!
+          </motion.h1>
+        </motion.div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <Box sx={style}>
-              <h1 className="text-black">{event.eventName}</h1>
-            </Box>
-          </motion.div>
-        </Modal>
+        <motion.div
+          className="flux bg-[#111b53] w-100 h-[10px] shadow-2xl text-white rounded-lg border-[3px] p-0 mx-20"
+          whileHover={{ y: "-10px" }}
+          animate={animation2}
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+          // transition={{ duration: 0.4 }}
+        ></motion.div>
       </motion.div>
     </motion.Reactdiv>
   );

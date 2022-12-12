@@ -92,11 +92,11 @@ function About() {
 
   return (
     <motion.Reactdiv
-      id="sponsors"
+      id="about"
       ref={ref}
-      className="h-screen w-screen bg-[#faf3ea]"
+      className="h-screen w-screen bg-[#faf3ea] mr-10 pr-10"
     >
-      <motion.div className="bg-[#faf3ea] h-screen m-6">
+      <motion.div className="bg-[#faf3ea] h-screen m-6 text-right pr-10 pt-[100px]">
         <motion.h1
           className="text-white text-9xl mb-10 ml-10"
           animate={animation}
@@ -108,48 +108,46 @@ function About() {
         >
           ABOUT
         </motion.h1>
-        <motion.h1
-          className="text-white text-9xl mb-10 ml-10"
-          animate={animation}
-          style={{
-            fontFamily: "valorax Regular",
-            fontWeight: "normal",
-            fontSize: "100px",
-          }}
-        >
-          ABOUT
-        </motion.h1>
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto">
+          <div></div>
+          <motion.h1
+            className="text-white text-9xl mb-10 ml-10"
+            animate={animation}
+            style={{
+              // fontFamily: "valorax Regular",
+              // fontWeight: "normal",
+              fontFamily: ["JetBrains Mono", "monospace"],
+              fontSize: "20px",
+              lineHeight: "1.5",
+            }}
+          >
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            pariatur?
+          </motion.h1>
+        </div>
 
-        <p
-          className="z-50 text-white bg-white h-[100px]"
-          style={{ zIndex: "999" }}
-        >
-          wjk cdbckwd bckwd bckwd bc
-        </p>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8"></div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <Box sx={style}>
-              <h1 className="text-black">{event.eventName}</h1>
-            </Box>
-          </motion.div>
-        </Modal>
-      </motion.div>
+        className="flux bg-[#111b53] w-100 h-[10px] shadow-2xl text-white rounded-lg border-[3px] p-0 mx-20"
+        whileHover={{ y: "-10px" }}
+        animate={animation2}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // transition={{ duration: 0.4 }}
+      ></motion.div>
     </motion.Reactdiv>
   );
 }

@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import Particle from "../components/Particle";
 import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Progress from "../components/Progress";
 
 function home() {
