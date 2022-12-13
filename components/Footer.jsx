@@ -33,14 +33,14 @@ function Footer() {
           <h1>L</h1>
         </div>
 
-        {/* <div className="ml-[150px] mt-[25px] ">
+        {/* <div className="ml-[150px] ">
           <FontAwesomeIcon
             icon={faPhone}
             className="text-3xl"
           ></FontAwesomeIcon>
           <div className="inline ml-[40px] text-xl pb-[10px]">9898989898</div>
         </div>
-        <div className="ml-[150px] mt-[25px] ">
+        <div className="ml-[150px] h-20 ">
           <FontAwesomeIcon
             icon={faAddressBook}
             className="text-3xl"
@@ -52,7 +52,7 @@ function Footer() {
         <h1 className="text-4xl ml-[45px] mt-[40px] font-bold">MORE</h1>
         <a
           href="https://www.google.com"
-          className="text-xl ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+          className="text-xl ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5] "
         >
           {/* <FontAwesomeIcon
             icon={faTwitter}
@@ -61,34 +61,34 @@ function Footer() {
           Home
         </a>
 
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold  hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           {/* <FontAwesomeIcon icon={faFacebook} className="text-3xl">
             {" "}
           </FontAwesomeIcon> */}
           About Us
         </a>
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           {/* <FontAwesomeIcon
             icon={faInstagram}
             className="text-3xl"
           ></FontAwesomeIcon> */}
           Events
         </a>
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           {/* <FontAwesomeIcon
             icon={faLinkedin}
             className="text-3xl"
           ></FontAwesomeIcon> */}
           Sponsors
         </a>
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           {/* <FontAwesomeIcon
             icon={faDiscord}
             className="text-3xl"
           ></FontAwesomeIcon> */}
           Fluxus Tech Exihibits
         </a>
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           {/* <FontAwesomeIcon
             icon={faDiscord}
             className="text-3xl"
@@ -100,54 +100,54 @@ function Footer() {
         <h1 className="text-4xl ml-[45px] mt-[40px] font-bold">FOLLOW</h1>
         <a
           href="https://www.google.com"
-          className="text-xl ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+          className="text-xl ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]"
         >
           {/* <FontAwesomeIcon
             icon={faTwitter}
-            className="text-3xl text-black"
+            className="text-3xl ml-[100px]  text-black"
           ></FontAwesomeIcon> */}
           Twitter
         </a>
 
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-          {/* <FontAwesomeIcon icon={faFacebook} className="text-3xl">
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
+          {/* <FontAwesomeIcon icon={faFacebook} className="text-3xl ml-[100px] ">
             {" "}
           </FontAwesomeIcon> */}
           Instagram
         </a>
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           {/* <FontAwesomeIcon
             icon={faInstagram}
-            className="text-3xl"
+            className="text-3xl ml-[100px] "
           ></FontAwesomeIcon> */}
           LinkedIn
         </a>
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
+          Discord
           {/* <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-3xl"
+            className="text-3xl ml-[100px] mt-[0px]"
           ></FontAwesomeIcon> */}
-          Discord
         </a>
-        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-          {/* <FontAwesomeIcon
-            icon={faDiscord}
-            className="text-3xl"
-          ></FontAwesomeIcon> */}
+        <a className="text-xl ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5] text-justify">
           Facebook
+          {/* <FontAwesomeIcon 
+            icon={faDiscord}
+            className="text-3xl ml-[100px]  "
+          ></FontAwesomeIcon> */}
         </a>
       </div>
       <div className="bg-[#111b53] w-full z-50 h-auto pb-10 font-bold">
-        <h1 className="text-4xl ml-[45px] mt-[40px]">ADDRESS</h1>
-        <a className="ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block text-xl font-bold">
+        <h1 className="text-4xl ml-[45px] mt-[40px]">LEGAL</h1>
+        <a className="ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block text-xl font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           Privacy
         </a>
         {/* <hr className="ml-[45px]  w-[350px]" /> */}
-        <a className="ml-[45px] hover:rounded-sm p-[4px] block text-xl font-bold">
+        <a className="ml-[45px] hover:rounded-sm p-[4px] block text-xl font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           Terms
         </a>{" "}
         {/* <hr className="ml-[45px]  w-[350px]" /> */}
-        <a className="ml-[45px] hover:rounded-sm p-[4px] block text-xl font-bold">
+        <a className="ml-[45px] hover:rounded-sm p-[4px] block text-xl font-bold hover:text-[#1f33a5]  hover:border-l-2 hover:border-l-[#1f33a5]">
           Brand guidelines
         </a>{" "}
         {/* <hr className="ml-[45px]  w-[350px]" /> */}
