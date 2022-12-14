@@ -112,7 +112,7 @@ function MainSec() {
                 fontSize: "200px",
               }}
             >
-              TECHFEST
+              INGENIUM
             </h1>
             <h1
               className="text-9xl font-bold z-50 text-white text-center"
