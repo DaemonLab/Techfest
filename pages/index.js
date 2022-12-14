@@ -12,21 +12,24 @@ import Progress from "../components/Progress";
 
 function home() {
   return (
-    <motion.div
-      initial={{ opacity: 0.4 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      exit={{ opacity: 2 }}
-    >
-      <Particle></Particle>
-      <Navbar></Navbar>
-      <HomePage></HomePage>
-      <Events></Events>
-      {/* <Parallax></Parallax> */}
-      <About></About>
-      <Sponsors></Sponsors>
-      <Footer></Footer>
-    </motion.div>
+    <div className="overflow-x-hidden">
+      <motion.div
+        initial={{ opacity: 0.4 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        exit={{ opacity: 2 }}
+      >
+        <Particle></Particle>
+        <Navbar></Navbar>
+        <HomePage></HomePage>
+        <Events></Events>
+        {/* <Parallax></Parallax> */}
+        <About></About>
+        <Sponsors></Sponsors>
+        <Footer></Footer>
+      </motion.div>
+    </div>
+
   );
 }
 
