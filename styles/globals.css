@@ -413,7 +413,7 @@ body {
   border: 1px solid rgba(225, 227, 232, 0.18);
   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
-  background-color: white;
+  background-image: url('../public/images/Group\ 1.png');
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,8 +441,8 @@ body {
 }
 
 .super-box:hover .icon_bg {
-  -webkit-transform: translateY(-32px) scale(6);
-          transform: translateY(-32px) scale(6);
+  -webkit-transform: translateY(-32px) scale(2);
+          transform: translateY(-32px) scale(2);
 }
 
 .super-box:hover .icon {
@@ -460,6 +460,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url('../public/images/Group\ 1.png');
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
