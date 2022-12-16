@@ -17,7 +17,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
     <motion.div
-      className="flux z-auto grid bg-[#111b53] sm:h-auto xsm:h-auto w-screen md:grid-cols-4 sm:grid-cols-1 xsm:grid-cols-1 overflow-hidden snap-mandatory before:rounded-t-[80px solid white] text-white"
+      className="flux z-auto grid bg-[#111b53] sm:h-auto xsm:h-auto w-full md:grid-cols-4 sm:grid-cols-1 xsm:grid-cols-1 overflow-hidden snap-mandatory before:rounded-t-[80px solid white] text-white"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -52,7 +52,7 @@ function Footer() {
         <h1 className="text-4xl ml-[45px] mt-[40px] font-bold">MORE</h1>
         <a
           href="https://www.google.com"
-          className="text-xl ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+          className="text-xl ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold w-full"
         >
           {/* <FontAwesomeIcon
             icon={faTwitter}

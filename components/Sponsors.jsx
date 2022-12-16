@@ -17,6 +17,7 @@ function Sponsors() {
           type: "spring",
           duration: 1,
           bounce: 0.1,
+          delay: 0.3,
         },
       });
 
@@ -27,24 +28,25 @@ function Sponsors() {
           type: "spring",
           duration: 1,
           bounce: 0.1,
+          delay: 0.5,
         },
       });
 
       animation3.start({
         y: 0,
         opacity: 1,
-        scale: 1,
         transition: {
           type: "spring",
-          duration: 1.5,
+          duration: 1,
           bounce: 0.1,
+          delay: 0.7,
         },
       });
     }
     if (!inView) {
       animation.start({
+        y: "10vh",
         opacity: 0,
-        y: "-20vw",
       });
       animation2.start({
         opacity: 0,
@@ -53,33 +55,43 @@ function Sponsors() {
       animation3.start({
         opacity: 0,
         y: "-10vw",
-        scale: 0.5,
       });
     }
   });
   return (
     <motion.Reactdiv
       id="sponsors"
-      className="z-0 flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      className="z-0 flex items-center justify-center h-auto w-screen bg-[#faf3ea] mb-[90px] mt-[70px]"
     >
-      <div className="flex flex-col h-screen w-screen space-y-32 w-full mt-40">
-        <div className="flex w-full lg:w-1/2 z-50 lg:m-6">
+      {/* <motion.div
+        className="flux bg-[#111b53] w-100 h-[10px] shadow-2xl text-white rounded-lg border-[3px] p-0"
+        animate={animation}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // transition={{ duration: 0.4 }}
+      ></motion.div> */}
+      <div ref={ref}></div>
+      <motion.div
+        className="flex flex-col h-auto w-screen space-y-32 w-full mt-40"
+        animate={animation}
+      >
+        <div className="flex w-full z-50">
           <h1
             style={{
               fontFamily: "valorax Regular",
               fontWeight: "normal",
-              fontSize: "100px",
+              fontSize: "50px",
             }}
-            className="text-6xl w-full lg:text-8xl lg:ml-10 text-center lg:text-left uppercase text-white font-valorax"
+            className="text-center text-6xl w-full lg:text-8xl text-center uppercase text-white font-valorax"
           >
             sponsors
           </h1>
         </div>
         <div className="flex flex-col lg:flex-row w-full justify-center items-center lg:space-x-16 space-y-16 lg:space-y-0">
-          <div className="super-box w-96 h-96 z-[0] bg-[#111b53] rounded-full">
+          <motion.div
+            className="super-box w-96 h-96 z-[0] bg-[#111b53] rounded-full"
+            animate={animation}
+          >
             <div className="flex flex-col justify-center items-center relative w-full h-full">
               <div className="box flex flex-col">
                 <div className="icon_bg w-48 h-48"></div>
@@ -100,8 +112,11 @@ function Sponsors() {
                 </h1>
               </div>
             </div>
-          </div>
-          <div className="super-box w-96 h-96 z-0 bg-[#111b53] rounded-full">
+          </motion.div>
+          <motion.div
+            className="super-box w-96 h-96 z-0 bg-[#111b53] rounded-full"
+            animate={animation2}
+          >
             <div className="flex flex-col justify-center items-center relative w-full h-full">
               <div className="box flex flex-col">
                 <div className="icon_bg w-48 h-48"></div>
@@ -124,8 +139,11 @@ function Sponsors() {
                 </h1>
               </div>
             </div>
-          </div>
-          <div className="super-box w-96 h-96 z-0 bg-[#111b53] rounded-full">
+          </motion.div>
+          <motion.div
+            className="super-box w-96 h-96 z-0 bg-[#111b53] rounded-full"
+            animate={animation3}
+          >
             <div className="flex flex-col justify-center items-center relative w-full h-full">
               <div className="box flex flex-col">
                 <div className="icon_bg w-48 h-48"></div>
@@ -149,9 +167,9 @@ function Sponsors() {
                 </h1>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </motion.Reactdiv>
   );
 }

@@ -15,6 +15,7 @@ body {
   background-color: black;
 }
 
+
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
@@ -29,6 +30,14 @@ body {
 @font-face {
   font-family: "Debug";
   src: local('Debug'), url('../public/degug.woff') format('woff');
+}
+
+.main-logo{
+  font-size: 200px;
+}
+
+.sec-logo{
+  font-size: 60px;
 }
 
 .container {
@@ -125,7 +134,9 @@ body {
   border-radius: 4px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
   overflow: hidden;
-  padding: 20px 50px 20px 50px;
+  /* padding: 20px 50px 20px 50px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   font-size: 20px;
   position: relative;
@@ -258,6 +269,60 @@ body {
 }
 .four:after, .four:before {
   content: "✩";
+}
+
+@media (max-width: 400px) {
+  .four:after, .four:before {
+    content: "";
+  }
+  .main-logo{
+    font-size: 50px;
+  }
+  .sec-logo{
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1430px) {
+  .main-logo{
+    font-size: 150px;
+  }
+  .sec-logo{
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1026px) {
+  .main-logo{
+    font-size: 130px;
+  }
+  .sec-logo{
+  font-size: 60px;
+}
+}
+@media (max-width: 863px) {
+  .main-logo{
+    font-size: 100px;
+  }
+  .sec-logo{
+  font-size: 55px;
+}
+}
+@media (max-width: 690px) {
+  .main-logo{
+    font-size: 80px;
+  }
+  .sec-logo{
+  font-size: 45px;
+}
+}
+@media (max-width: 400px) {
+  .main-logo{
+    font-size: 55px;
+  }
+  .sec-logo{
+  font-size: 40px;
+}
 }
 .four b {
   font-weight: 700;

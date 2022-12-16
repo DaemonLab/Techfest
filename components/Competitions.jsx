@@ -5,6 +5,7 @@ import CardOne from "./CardOne";
 import CardTwo from "./CardTwo";
 import CardThree from "./CardThree";
 
+
 const competitionsDetails = [
   {
     name: "Divide By Zero",
@@ -84,6 +85,7 @@ function Competitions() {
   const animation2 = useAnimation();
   const animation3 = useAnimation();
 
+
   useEffect(() => {
     if (inView) {
       animation.start({
@@ -154,12 +156,12 @@ function Competitions() {
           style={{
             fontFamily: "valorax Regular",
             fontWeight: "normal",
-            fontSize: "60px"
+            fontSize: "40px",
           }}
         >
           COMPETITIONS
         </motion.h1>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-1 flex items-center justify-center grid-flow-row gap-x-10 gap-y-10 h-100">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-1 xxsm:grid-cols-1 flex items-center justify-center grid-flow-row gap-x-10 gap-y-10 h-100">
           {competitionsDetails.map((comp) => (
             <CardTwo details={comp}></CardTwo>
           ))}
