@@ -149,10 +149,8 @@ function Events() {
               }}
               className="p-5 mt-6"
             >
-              NOW IS THE PERFECT TIME TO PREPARE FOR HACKTOBERFEST. GET A JUMP
-              START BY FINDING PROJECTS TO CONTRIBUTE TO, ADDING THE
-              ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
-              WITH GIT.
+                              BUCKLE UP YOUR SEAT BELTS AND GET READY TO TAKE PART IN VARIOUS COMPETITIONS IN INGENIUM ORGANIZED FOR EVERY DOMAIN. REGISTER QUICKLY.
+
             </p>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
@@ -177,7 +175,7 @@ function Events() {
                 fontSize: "30px",
               }}
             >
-              competitions
+              tech talks
             </h1>
             <p
               style={{
@@ -187,11 +185,7 @@ function Events() {
               }}
               className="p-5 mt-6"
             >
-              NOW IS THE PERFECT TIME TO PREPARE FOR HACKTOBERFEST. GET A JUMP
-              START BY FINDING PROJECTS TO CONTRIBUTE TO, ADDING THE
-              ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
-              WITH GIT.
-            </p>
+GET TO KNOW ABOUT SOME NEW TECHNOLOGIES, NETWORK WITH SOME PEOPLE OF OTHER COLLEGES AND VARIOUS WORKING PROFESSIONALS THROUGH VARIOUS TECH TALKS, REGISTER NOW.            </p>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
               onClick={competitionsHandler}
@@ -215,7 +209,7 @@ function Events() {
                 fontSize: "30px",
               }}
             >
-              competitions
+              workshops
             </h1>
             <p
               style={{
@@ -225,10 +219,7 @@ function Events() {
               }}
               className="p-5 mt-6"
             >
-              NOW IS THE PERFECT TIME TO PREPARE FOR HACKTOBERFEST. GET A JUMP
-              START BY FINDING PROJECTS TO CONTRIBUTE TO, ADDING THE
-              ‘HACKTOBERFEST’ TAG TO YOUR PROJECTS, OR FAMILIARIZING YOURSELF
-              WITH GIT.
+              POLISH YOUR TECH SKILLS, LEARN NEW THINGS, FIND NEW PERSONS. TIME TO INCRESE YOUR CURIOSITY. REGGISTER FOR VARIOUS WORKSHOPS IN INGENIUM.
             </p>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"

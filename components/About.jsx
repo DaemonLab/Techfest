@@ -136,31 +136,27 @@ function About() {
             />
           </motion.div>
           <motion.h1
-            className="text-white md:text-9xl mb-10 ml-10"
+            className="text-[#ffffff] md:text-9xl mb-10 ml-10"
             animate={animation2}
             style={{
               // fontFamily: "valorax Regular",
               // fontWeight: "normal",
               fontFamily: ["JetBrains Mono", "monospace"],
-              fontSize: "20px",
+              fontSize: "30px",
               lineHeight: "1.5",
             }}
           >
             <div ref={ref}></div>
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur?
+            Ingenium is the first edition of a tech fest in Fluxus, IIT
+Indore. <br /><br />
+Our vision is to level-up the idea of what a "tech fest"
+means! <br /><br />
+We have various online and offline competitions with
+thousands of students and enthusiasts taking part.
+Workshops, Technical exhibitions, Tech Talks, Start up
+Expo, Research and Industry Conclave, Online hackathons,
+Real life hardware problems, and a lot more we plan to
+Achieve in the future
           </motion.h1>
         </div>
 
