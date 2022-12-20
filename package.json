@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@babel/core": "^7.20.5",
+    "@bradgarropy/next-seo": "^1.2.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@motionone/utils": "^10.15.1",
     "@mui/material": "^5.10.16",
     "@mui/styled-engine-sc": "^5.10.16",
@@ -27,6 +31,7 @@
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.4.1",
     "react-is": "^18.2.0",
+    "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "react-tsparticles": "^2.6.0",
     "slick-carousel": "^1.8.1",
@@ -36,6 +41,7 @@
     "typescript": "^4.9.4"
   },
   "devDependencies": {
+    "@types/react-scroll": "^1.8.5",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4"

@@ -15,6 +15,7 @@ body {
   background-color: black;
 }
 
+
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
@@ -26,6 +27,18 @@ body {
   font-weight: normal;
   src: local('valorax Regular'), url('../public/Valorax-lg25V.woff') format('woff');
   }
+@font-face {
+  font-family: "Debug";
+  src: local('Debug'), url('../public/degug.woff') format('woff');
+}
+
+.main-logo{
+  font-size: 200px;
+}
+
+.sec-logo{
+  font-size: 60px;
+}
 
 .container {
   display: table-cell;
@@ -46,6 +59,13 @@ body {
   font-size: 9vw;
   line-height: 9vw;
   box-shadow: 0 0 1.5vw #2356FF;
+}
+
+.flux3 {
+  color: #abbcf3;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0vw 1.5vw #2356FF;
 }
 .flux2{
   color: #426DFB;
@@ -69,6 +89,10 @@ body {
   background-color: #426DFB;
   transform-origin: 0%;
   /* height: 1000px; */
+  z-index: 999;
+}
+
+.divider{
   z-index: 999;
 }
 
@@ -102,65 +126,26 @@ body {
     color: #f8fafa;
   }
 }
-/* Buttons css */
-/* @charset "UTF-8"; */
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
-@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
-/* :root {
-  background: -webkit-linear-gradient(top, #222838 0%, #131621 100%);
-  height: 100vh;
-} */
 
-.container_ {
-  width: 334px;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  text-align: center;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-/* body
-{
-  background:#333;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
-
-h1, h2 {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  font-weight: normal;
-}
-
-h2 {
-  font-size: 14px;
-  margin-bottom: 30px;
-  color: #24E2B8;
-} */
 
 .one, .two, .three, .four, .five {
+  text-align: center;
   border: none;
   border-radius: 4px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
   overflow: hidden;
-  padding: 20px 50px 20px 70px;
+  /* padding: 20px 50px 20px 50px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   font-size: 20px;
   position: relative;
-  color: white;
   outline: none;
   cursor: pointer;
   width: 100%;
   -webkit-transition: background-position .7s,box-shadow .4s;
   transition: background-position .7s,box-shadow .4s;
   background-size: 110%;
-  font-family: 'Oswald', sans-serif;
 }
 .one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
   background-position: 0% 30%;
@@ -196,9 +181,9 @@ h2 {
 }
 
 .one {
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #782CDA;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#782CDA), to(rgba(126, 94, 162, 0.51))), url("http://gearnuke.com/wp-content/uploads/2015/11/1280x720-cuU.jpg");
-  background-image: linear-gradient(to bottom, #782CDA, rgba(126, 94, 162, 0.51)), url("http://gearnuke.com/wp-content/uploads/2015/11/1280x720-cuU.jpg");
+  /* box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #782CDA; */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#782CDA), to(rgba(126, 94, 162, 0.51))), url("https://res.cloudinary.com/abhi9av/image/upload/v1670825400/Screenshot_2022-12-12_at_11.39.47_AM_xgnhnz.png");
+  background-image: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(170,170,255,0.7) 0%, rgba(84,226,255,1) 100%), url("https://res.cloudinary.com/abhi9av/image/upload/v1670825400/Screenshot_2022-12-12_at_11.39.47_AM_xgnhnz.png");
 }
 .one:hover {
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #782CDA;
@@ -211,11 +196,10 @@ h2 {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.one:after, .one:before {
+/* .one:after, .one:before {
   content: "#";
-}
+} */
 .one b {
-  color: #DDA6FF;
   font-weight: 700;
 }
 
@@ -286,8 +270,61 @@ h2 {
 .four:after, .four:before {
   content: "✩";
 }
+
+@media (max-width: 400px) {
+  .four:after, .four:before {
+    content: "";
+  }
+  .main-logo{
+    font-size: 50px;
+  }
+  .sec-logo{
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1430px) {
+  .main-logo{
+    font-size: 150px;
+  }
+  .sec-logo{
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1026px) {
+  .main-logo{
+    font-size: 130px;
+  }
+  .sec-logo{
+  font-size: 60px;
+}
+}
+@media (max-width: 863px) {
+  .main-logo{
+    font-size: 100px;
+  }
+  .sec-logo{
+  font-size: 55px;
+}
+}
+@media (max-width: 690px) {
+  .main-logo{
+    font-size: 80px;
+  }
+  .sec-logo{
+  font-size: 45px;
+}
+}
+@media (max-width: 400px) {
+  .main-logo{
+    font-size: 55px;
+  }
+  .sec-logo{
+  font-size: 40px;
+}
+}
 .four b {
-  color: #1CF4FF;
   font-weight: 700;
 }
 
@@ -376,7 +413,7 @@ h2 {
   border: 1px solid rgba(225, 227, 232, 0.18);
   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
-  background-color: #0babb7;
+  background-image: url('../public/images/Group\ 1.png');
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,8 +441,8 @@ h2 {
 }
 
 .super-box:hover .icon_bg {
-  -webkit-transform: translateY(-32px) scale(6);
-          transform: translateY(-32px) scale(6);
+  -webkit-transform: translateY(-32px) scale(2);
+          transform: translateY(-32px) scale(2);
 }
 
 .super-box:hover .icon {
@@ -423,6 +460,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url('../public/images/Group\ 1.png');
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

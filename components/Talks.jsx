@@ -1,8 +1,49 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import CardOne from "./CardOne";
+import CardTwo from "./CardTwo";
+import CardThree from "./CardThree";
 
-function Workshops() {
+const competitionsDetails = [
+  {
+    name: "Divide By Zero",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    name: "Code Golf",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    name: "Surprise Language",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    name: "Hackistica",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    name: "Byte Bandits CTF",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    name: "Enosium",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+  {
+    name: "Divide By Zero",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  },
+];
+
+function Talks() {
   const { ref, inView } = useInView();
   const animation = useAnimation();
   const animation2 = useAnimation();
@@ -59,8 +100,8 @@ function Workshops() {
   });
   return (
     <motion.Reactdiv
-      id="Workshops"
-      className="flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
+      id="competitions"
+      className="flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen mt-[100px]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -69,106 +110,28 @@ function Workshops() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="bg-[#faf3ea] h-full"
+        className="h-full"
         ref={ref}
       >
         <motion.h1
-          className="text-[#FFFFFF] text-5xl text-center mb-10"
+          className="text-5xl text-center mb-10 text-white"
           animate={animation3}
+          style={{
+            fontFamily: "valorax Regular",
+            fontWeight: "normal",
+            fontSize: "80px",
+          }}
         >
-          Workshops
+            TALKS
         </motion.h1>
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-x-5 gap-y-8 h-100">
-          <motion.div
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-30%"
-            whileHover={{ scale: 1.05, boxShadow:"0px 0px 15px 0px #FFFFFF" }}
-            animate={animation}
-          >
-            <img className="object-fill" src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80" alt="Flower and sky"/>
-            <div className="absolute bottom-0 left-0 px-6 py-4 bg-slate-500/50">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-white">This is the title</h4>
-            <p className="leading-normal text-gray-100">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-            <button className='four'>Click here to <b>Register</b></button>
-            </div>
-          </motion.div>
-          <motion.div
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-30%"
-            whileHover={{ scale: 1.05, boxShadow:"0px 0px 15px 0px #FFFFFF" }}
-            animate={animation}
-          >
-            <img className="object-fill" src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80" alt="Flower and sky"/>
-            <div className="absolute bottom-0 left-0 px-6 py-4 bg-slate-500/50">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-white">This is the title</h4>
-            <p className="leading-normal text-gray-100">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-            <button className='four'>Click here to <b>Register</b></button>
-            </div>
-          </motion.div>
-          <motion.div
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-30%"
-            whileHover={{ scale: 1.05, boxShadow:"0px 0px 15px 0px #FFFFFF" }}
-            animate={animation}
-          >
-            <img className="object-fill" src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80" alt="Flower and sky"/>
-            <div className="absolute bottom-0 left-0 px-6 py-4 bg-slate-500/50">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-white">This is the title</h4>
-            <p className="leading-normal text-gray-100">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-            <button className='four'>Click here to <b>Register</b></button>
-            </div>
-          </motion.div>
-          <motion.div
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-30%"
-            whileHover={{ scale: 1.05, boxShadow:"0px 0px 15px 0px #FFFFFF" }}
-            animate={animation}
-          >
-            <img className="object-fill" src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80" alt="Flower and sky"/>
-            <div className="absolute bottom-0 left-0 px-6 py-4 bg-slate-500/50">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-white">This is the title</h4>
-            <p className="leading-normal text-gray-100">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-            <button className='four'>Click here to <b>Register</b></button>
-            </div>
-          </motion.div>
-          <motion.div
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-30%"
-            whileHover={{ scale: 1.05, boxShadow:"0px 0px 15px 0px #FFFFFF" }}
-            animate={animation}
-          >
-            <img className="object-fill" src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80" alt="Flower and sky"/>
-            <div className="absolute bottom-0 left-0 px-6 py-4 bg-slate-500/50">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-white">This is the title</h4>
-            <p className="leading-normal text-gray-100">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-            <button className='four'>Click here to <b>Register</b></button>
-            </div>
-          </motion.div>
-          <motion.div
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-30%"
-            whileHover={{ scale: 1.05, boxShadow:"0px 0px 15px 0px #FFFFFF" }}
-            animate={animation}
-          >
-            <img className="object-fill" src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80" alt="Flower and sky"/>
-            <div className="absolute bottom-0 left-0 px-6 py-4 bg-slate-500/50">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-white">This is the title</h4>
-            <p className="leading-normal text-gray-100">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-            <button className='four'>Click here to <b>Register</b></button>
-            </div>
-          </motion.div>
-          <motion.div
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-30%"
-            whileHover={{ scale: 1.05, boxShadow:"0px 0px 15px 0px #FFFFFF" }}
-            animate={animation}
-          >
-            <img className="object-fill" src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80" alt="Flower and sky"/>
-            <div className="absolute bottom-0 left-0 px-6 py-4 bg-slate-500/50">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-white">This is the title</h4>
-            <p className="leading-normal text-gray-100">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-            <button className='four'>Click here to <b>Register</b></button>
-            </div>
-          </motion.div>
-          
-          
+          {competitionsDetails.map((comp) => (
+            <CardTwo details={comp}></CardTwo>
+          ))}
         </div>
       </motion.div>
     </motion.Reactdiv>
   );
 }
 
-export default Workshops;
+export default Talks;

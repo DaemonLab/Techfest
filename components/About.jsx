@@ -19,6 +19,13 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 0.35,
+    },
+  },
+};
 
 const events = [
   {
@@ -46,22 +53,24 @@ function About() {
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {
           type: "spring",
           duration: 1,
+          delay: 0.3,
           bounce: 0.1,
         },
       });
 
       animation2.start({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {
           type: "spring",
           duration: 1,
           bounce: 0.1,
+          delay: 0.6,
         },
       });
       animation3.start({
@@ -76,81 +85,84 @@ function About() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        x: "-10vw",
+        y: "10vh",
       });
       animation2.start({
         opacity: 0,
-        x: "10vw",
+        y: "10vh",
       });
       animation3.start({
         opacity: 0,
-        x: "-5vw",
+        x: "0",
         // scale: 0.5,
       });
     }
   });
 
   return (
-    <motion.Reactdiv
-      id="sponsors"
-      ref={ref}
-      className="h-screen w-screen bg-[#faf3ea]"
+    <div
+      id="about"
+      className="h-auto md:w-screen sm:w-full xsm:w-full xxsm:w-full bg-[#faf3ea] x-50"
     >
-      <motion.div className="bg-[#faf3ea] h-screen m-6">
-        <motion.h1
-          className="text-white text-9xl mb-10 ml-10"
-          animate={animation}
-          style={{
-            fontFamily: "valorax Regular",
-            fontWeight: "normal",
-            fontSize: "100px",
-          }}
-        >
-          ABOUT
-        </motion.h1>
-        <motion.h1
-          className="text-white text-9xl mb-10 ml-10"
-          animate={animation}
-          style={{
-            fontFamily: "valorax Regular",
-            fontWeight: "normal",
-            fontSize: "100px",
-          }}
-        >
-          ABOUT
-        </motion.h1>
-
-        <p
-          className="z-50 text-white bg-white h-[100px]"
-          style={{ zIndex: "999" }}
-        >
-          wjk cdbckwd bckwd bckwd bc
-        </p>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8"></div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
+      <motion.div className="z-50 h-auto md:m-6 pr-10 pt-[100px]">
+        <div className="grid md:grid-cols-1 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto mb-[50px]">
+          <motion.h1
+            className="text-white text-9xl mb-10 ml-10 text-center"
+            animate={animation}
+            style={{
+              fontFamily: "valorax Regular",
+              fontWeight: "normal",
+              fontSize: "60px",
+            }}
+          >
+            About
+          </motion.h1>
+        </div>
+        <div
+          className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto"
+          variants={container}
+          initial="hidden"
+          animate="show"
+          exit="exit"
         >
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            className="flex items-center justify-center w-[100%] h-[100%]"
+            animate={animation}
           >
-            <Box sx={style}>
-              <h1 className="text-black">{event.eventName}</h1>
-            </Box>
+            <img
+              className="z-50 h-[100%] w-[100%]"
+              src="/wordcropped.png"
+              alt="An SVG of an eye"
+            />
           </motion.div>
-        </Modal>
+          <motion.h1
+            className="text-[#ffffff] md:text-9xl mb-10 ml-10"
+            animate={animation2}
+            style={{
+              // fontFamily: "valorax Regular",
+              // fontWeight: "normal",
+              fontFamily: ["JetBrains Mono", "monospace"],
+              fontSize: "30px",
+              lineHeight: "1.5",
+            }}
+          >
+            <div ref={ref}></div>
+            Ingenium is the first edition of a tech fest in Fluxus, IIT
+Indore. <br /><br />
+Our vision is to level-up the idea of what a "tech fest"
+means! <br /><br />
+We have various online and offline competitions with
+thousands of students and enthusiasts taking part.
+Workshops, Technical exhibitions, Tech Talks, Start up
+Expo, Research and Industry Conclave, Online hackathons,
+Real life hardware problems, and a lot more we plan to
+Achieve in the future
+          </motion.h1>
+        </div>
+
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8"></div>
       </motion.div>
-    </motion.Reactdiv>
+    </div>
   );
 }
 

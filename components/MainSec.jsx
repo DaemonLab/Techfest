@@ -105,21 +105,20 @@ function MainSec() {
         <div>
           <motion.div animate={animation}>
             <h1
-              className="text-9xl font-bold z-50 text-white"
+              className="main-logo textfont-bold z-50 text-white"
               style={{
                 fontFamily: "valorax Regular",
                 fontWeight: "normal",
-                fontSize: "200px",
+                // fontSize: "200px"
               }}
             >
-              TECHFEST
+              INGENIUM
             </h1>
             <h1
-              className="text-9xl font-bold z-50 text-white text-center"
+              className="sec-logo text-9xl font-bold z-50 text-white text-center"
               style={{
                 fontFamily: "valorax Regular",
                 fontWeight: "normal",
-                fontSize: "70px",
               }}
             >
               2022-23
