@@ -32,8 +32,9 @@ function CardTwo(props) {
       transition={{ duration: 0.5 }}
     >
       <img
-        className="object-fill w-100 h-[500px]"
-        src="https://wallpaper.dog/large/10702676.jpg"
+        className="object-fill w-100 h-[500px] pb-[170px]"
+        // src="https://wallpaper.dog/large/10702676.jpg"
+        src={props.details.src}
         // style={{ width: "100%", height: "400px" }}
         alt="Flower and sky"
       />
@@ -101,8 +102,8 @@ function CardTwo(props) {
           <div className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 h-[90%] p-4 overflow-scroll">
             <div className="h-[100%] rounded-md">
               <img
-                className="h-[100%] rounded-md object-cover"
-                src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/what-is-competitive-programming-and-why-it-is-importantcontests/Images/Top-10-Programming-Languages-to-Watch-Out-in-2019.png"
+                className="rounded-md object-cover"
+                src={props.details.src}
               ></img>
             </div>
             <div
