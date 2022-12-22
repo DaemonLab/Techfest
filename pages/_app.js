@@ -30,6 +30,11 @@ function MyApp({ Component, pageProps }) {
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       ></Script>
+      <Script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></Script>
       <main className={myFont.className}>
         <Component {...pageProps} />
       </main>

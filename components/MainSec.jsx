@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useInView } from "react-intersection-observer";
+import ThreeCanvas from "./ThreeCanvas";
 
 const style = {
   position: "absolute",
@@ -102,7 +103,24 @@ function MainSec() {
       ref={ref}
     >
       <div className="text-[#FF595A] flex items-center justify-center ml-8 z-0">
-        <div>
+        {/* <ThreeCanvas></ThreeCanvas> */}
+        {/* <div
+          class="tenor-gif-embed"
+          data-postid="14681886"
+          data-share-method="host"
+          data-aspect-ratio="1"
+          data-width="100%"
+        >
+          <a href="https://tenor.com/view/fire-fireball-8bit-gif-14681886">
+            Fire Fireball Sticker
+          </a>
+          from{" "}
+          <a href="https://tenor.com/search/fire-stickers">Fire Stickers</a>
+        </div>{" "}
+        <p>
+          <a href="https://giphy.com/gifs/gYWeVOiMmbg3kzCTq5">via GIPHY</a>
+        </p> */}
+        <div className="absolute z-50">
           <motion.div animate={animation}>
             <h1
               className="main-logo textfont-bold z-50 text-white"

@@ -34,6 +34,7 @@
     "react-is": "^18.2.0",
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
+    "react-tooltip": "^5.3.0",
     "react-tsparticles": "^2.6.0",
     "sharp": "^0.31.3",
     "slick-carousel": "^1.8.1",
