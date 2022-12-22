@@ -109,20 +109,22 @@ function Events() {
         // animate={{ opacity: 1 }}
         // transition={{ duration: 0.4 }}
       ></motion.div>
-      <motion.div className="bg-[#faf3ea] w-full h-auto mr-0 mt-10 pt-10 sm:h-auto xsm:h-auto">
+      <motion.div className="bg-[#faf3ea] w-full h-auto mr-0 mt-10 pt-10 sm:h-auto xsm:h-auto p-10">
         <motion.h1
-          className="text-white text-9xl text-center mb-10"
+          className="text-white text-9xl text-center mb-10 subheadings"
           animate={animation}
           style={{
             fontFamily: "valorax Regular",
             fontWeight: "normal",
-            fontSize: "60px",
           }}
         >
           EVENTS
         </motion.h1>
 
-        <div className="grid md:grid-cols-3 sm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 grid-flow-row gap-8 p-2" ref={ref}>
+        <div
+          className="grid md:grid-cols-3 sm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 grid-flow-row gap-8 p-2 mt-2"
+          ref={ref}
+        >
           <motion.div
             className="flux bg-[#111b53] w-100 h-auto sm:shadow-2xl text-white rounded-lg border-[3px] p-0"
             whileHover={{ y: "-10px" }}
@@ -149,8 +151,9 @@ function Events() {
               }}
               className="p-5 mt-6"
             >
-                              BUCKLE UP YOUR SEAT BELTS AND GET READY TO TAKE PART IN VARIOUS COMPETITIONS IN INGENIUM ORGANIZED FOR EVERY DOMAIN. REGISTER QUICKLY.
-
+              BUCKLE UP YOUR SEAT BELTS AND GET READY TO TAKE PART IN VARIOUS
+              COMPETITIONS IN INGENIUM ORGANIZED FOR EVERY DOMAIN. REGISTER
+              QUICKLY.
             </p>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
@@ -185,7 +188,10 @@ function Events() {
               }}
               className="p-5 mt-6"
             >
-GET TO KNOW ABOUT SOME NEW TECHNOLOGIES, NETWORK WITH SOME PEOPLE OF OTHER COLLEGES AND VARIOUS WORKING PROFESSIONALS THROUGH VARIOUS TECH TALKS, REGISTER NOW.            </p>
+              GET TO KNOW ABOUT SOME NEW TECHNOLOGIES, NETWORK WITH SOME PEOPLE
+              OF OTHER COLLEGES AND VARIOUS WORKING PROFESSIONALS THROUGH
+              VARIOUS TECH TALKS, REGISTER NOW.{" "}
+            </p>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
               onClick={competitionsHandler}
@@ -219,7 +225,46 @@ GET TO KNOW ABOUT SOME NEW TECHNOLOGIES, NETWORK WITH SOME PEOPLE OF OTHER COLLE
               }}
               className="p-5 mt-6"
             >
-              POLISH YOUR TECH SKILLS, LEARN NEW THINGS, FIND NEW PERSONS. TIME TO INCRESE YOUR CURIOSITY. REGGISTER FOR VARIOUS WORKSHOPS IN INGENIUM.
+              POLISH YOUR TECH SKILLS, LEARN NEW THINGS, FIND NEW PERSONS. TIME
+              TO INCRESE YOUR CURIOSITY. REGGISTER FOR VARIOUS WORKSHOPS IN
+              INGENIUM.
+            </p>
+            <div
+              className="mt-8 text-sm w-100 text-center mb-8"
+              onClick={competitionsHandler}
+            >
+              <Button value="KNOW MORE!" ml="0"></Button>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flux bg-[#111b53] w-100 h-auto sm:shadow-2xl text-white rounded-lg border-[3px] p-0"
+            whileHover={{ y: "-10px" }}
+            animate={animation3}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ duration: 0.4 }}
+          >
+            <h1
+              className="p-0 w-100 text-center m-0 text-sm mt-10"
+              style={{
+                fontFamily: "valorax Regular",
+                fontWeight: "normal",
+                fontSize: "30px",
+              }}
+            >
+              workshops
+            </h1>
+            <p
+              style={{
+                fontFamily: ["JetBrains Mono", "monospace"],
+                fontSize: "20px",
+                lineHeight: "1.5",
+              }}
+              className="p-5 mt-6"
+            >
+              POLISH YOUR TECH SKILLS, LEARN NEW THINGS, FIND NEW PERSONS. TIME
+              TO INCRESE YOUR CURIOSITY. REGGISTER FOR VARIOUS WORKSHOPS IN
+              INGENIUM.
             </p>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
@@ -229,7 +274,7 @@ GET TO KNOW ABOUT SOME NEW TECHNOLOGIES, NETWORK WITH SOME PEOPLE OF OTHER COLLE
             </div>
           </motion.div>
         </div>
-        <motion.div className="h-[50%] p-10">
+        {/* <motion.div className="h-[50%] p-10">
           <motion.h1
             className="text-white text-9xl flex items-center justify-center text-center flux3 h-full text-lg"
             animate={animation}
@@ -242,7 +287,7 @@ GET TO KNOW ABOUT SOME NEW TECHNOLOGIES, NETWORK WITH SOME PEOPLE OF OTHER COLLE
           >
             TECH IT or LEAVE IT!
           </motion.h1>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}

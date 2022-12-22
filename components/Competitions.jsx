@@ -175,9 +175,9 @@ function Competitions() {
         >
           COMPETITIONS
         </motion.h1>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 xsm:grid-cols-1 xxsm:grid-cols-1 flex items-center justify-center grid-flow-row gap-x-10 gap-y-10 h-100">
-          {competitionsDetails.map((comp) => (
-            <CardTwo details={comp}></CardTwo>
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 msm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 flex items-center justify-center grid-flow-row gap-x-10 gap-y-10 h-100">
+          {competitionsDetails.map((comp, key) => (
+            <CardTwo details={comp} key={key}></CardTwo>
           ))}
         </div>
       </motion.div>

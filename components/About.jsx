@@ -6,6 +6,8 @@ import Button from "./Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
+import ThreeCanvas from "./ThreeCanvas";
 
 const style = {
   position: "absolute",
@@ -107,12 +109,11 @@ function About() {
       <motion.div className="z-50 h-auto md:m-6 pr-10 pt-[100px]">
         <div className="grid md:grid-cols-1 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto mb-[50px]">
           <motion.h1
-            className="text-white text-9xl mb-10 ml-10 text-center"
+            className="text-white text-9xl mb-10 ml-10 text-center subheadings uppercase"
             animate={animation}
             style={{
               fontFamily: "valorax Regular",
               fontWeight: "normal",
-              fontSize: "60px",
             }}
           >
             About
@@ -129,10 +130,13 @@ function About() {
             className="flex items-center justify-center w-[100%] h-[100%]"
             animate={animation}
           >
-            <img
+            <ThreeCanvas className="opacity-0.4"></ThreeCanvas>
+            <Image
               className="z-50 h-[100%] w-[100%]"
               src="/wordcropped.png"
               alt="An SVG of an eye"
+              width={500}
+              height={500}
             />
           </motion.div>
           <motion.h1
@@ -147,16 +151,17 @@ function About() {
             }}
           >
             <div ref={ref}></div>
-            Ingenium is the first edition of a tech fest in Fluxus, IIT
-Indore. <br /><br />
-Our vision is to level-up the idea of what a "tech fest"
-means! <br /><br />
-We have various online and offline competitions with
-thousands of students and enthusiasts taking part.
-Workshops, Technical exhibitions, Tech Talks, Start up
-Expo, Research and Industry Conclave, Online hackathons,
-Real life hardware problems, and a lot more we plan to
-Achieve in the future
+            Ingenium is the first edition of a tech fest in Fluxus, IIT Indore.{" "}
+            <br />
+            <br />
+            {`Our vision is to level-up the idea of what a "tech fest" means!`}{" "}
+            <br />
+            <br />
+            We have various online and offline competitions with thousands of
+            students and enthusiasts taking part. Workshops, Technical
+            exhibitions, Tech Talks, Start up Expo, Research and Industry
+            Conclave, Online hackathons, Real life hardware problems, and a lot
+            more we plan to Achieve in the future
           </motion.h1>
         </div>
 

@@ -13,7 +13,7 @@ export default function Carousel() {
   };
   return (
     <div className="">
-      <Slider {...settings}>
+      {/* <Slider {...settings}>
         <div className="h-[650px] w-[60px] bg-white">
           <img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202012/MIT-Coding-Brain-01-press_0.jpg?itok=JKoUflf8"></img>
         </div>
@@ -32,7 +32,7 @@ export default function Carousel() {
         <div className="h-[650px] w-[60px] bg-white">
           <h3>6</h3>
         </div>
-      </Slider>
+      </Slider> */}
     </div>
   );
 }

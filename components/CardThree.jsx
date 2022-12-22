@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function CardThree() {
   return (
@@ -7,7 +8,7 @@ function CardThree() {
       className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
       whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px 0px #FFFFFF" }}
     >
-      <img
+      <Image
         className="object-fill w-full h-49"
         src="https://images.unsplash.com/photo-1502581827181-9cf3c3ee0106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=420&q=80"
         alt="Flower and sky"
@@ -21,7 +22,7 @@ function CardThree() {
           tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.
         </p>
         <button className="three">
-          <a href="https://www.codepen.io/jcoulterdesign" target="_blank">
+          <a href="https://www.codepen.io/jcoulterdesign">
             <b>.</b>
           </a>
         </button>

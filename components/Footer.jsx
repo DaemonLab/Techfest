@@ -35,20 +35,20 @@ function Footer() {
 
         <div className="h-[30px] mt-[30px] ">
           <div className="h-[30px] text-xl mx-auto text-center">
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             icon={faPhone}
             className="text-3xl mr-[50px]"
-          ></FontAwesomeIcon>
+          ></FontAwesomeIcon> */}
           9898989898
           </div>
          
         </div>
         <div className="h-[30px] mt-[20px]">
         <div className="h-[30px] text-xl text-center">
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             icon={faAddressBook}
             className="text-3xl mr-[50px]"
-          ></FontAwesomeIcon>
+          ></FontAwesomeIcon> */}
           IIT INDORE
           </div>
          
@@ -108,40 +108,40 @@ function Footer() {
           href="https://www.google.com"
           className="text-xl  hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
         >
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             icon={faTwitter}
             className="text-2xl mr-[10px] align-middle rounded-full p-[5px]  hover:bg-[#55ACEE] hover:text-white"
-          ></FontAwesomeIcon>
+          ></FontAwesomeIcon> */}
           Twitter
         </a>
 
         <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
             icon={faInstagram}
             className="text-2xl mr-[10px] align-middle rounded-full p-[5px]  hover:bg-gradient-to-tr hover:from-[#fdf497] hover:via-[#fd5949] hover:via-[#d6249f] hover:to-[#285AEB] hover:text-white"
           >
-          </FontAwesomeIcon>
+          </FontAwesomeIcon> */}
           Instagram
         </a>
         <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
             icon={faLinkedin}
             className="text-2xl mr-[10px] align-middle rounded-full p-[6px]  hover:bg-[#007bb5] hover:text-white"
-          ></FontAwesomeIcon>
+          ></FontAwesomeIcon> */}
           LinkedIn
         </a>
         <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
             icon={faDiscord}
             className="text-2xl mr-[10px] align-middle rounded-full p-[5px] hover:bg-[#7289d9] hover:text-white "
-          ></FontAwesomeIcon>
+          ></FontAwesomeIcon> */}
           Discord
         </a>
         <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
             icon={faFacebook}
             className="text-2xl mr-[10px] align-middle rounded-full p-[4px] hover:bg-white hover:text-[#3B5998] "
-          ></FontAwesomeIcon>
+          ></FontAwesomeIcon> */}
           Facebook
         </a>
       </div>

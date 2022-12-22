@@ -22,14 +22,12 @@ function home() {
         <Particle></Particle>
         <Navbar></Navbar>
         <HomePage></HomePage>
-        <Events></Events>
-        {/* <Parallax></Parallax> */}
         <About></About>
+        <Events></Events>
         <Sponsors></Sponsors>
         <Footer></Footer>
       </motion.div>
     </div>
-
   );
 }
 

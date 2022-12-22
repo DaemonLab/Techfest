@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import Image from "next/image";
 
 const style = {
   position: "absolute",
@@ -25,7 +26,7 @@ function CardTwo(props) {
   const handleClose = () => setOpen(false);
   return (
     <motion.div
-      className="flux flex items-center justify-center relative overflow-hidden rounded-lg shadow-lg cursor-pointer x-100 md:w-[30vw] sm:w-[45vw] xsm:w-[90vw] m-10"
+      className="flux flex items-center h-[500px] justify-center relative overflow-hidden rounded-lg shadow-lg cursor-pointer x-100 md:w-[30vw] sm:w-[45vw] xsm:w-[90vw]"
       whileHover={{ y: -4, boxShadow: "0px 0px 15px 0px #FFFFFF" }}
       initial={{ opacity: 0, y: "100px", rotate: -4 }}
       animate={{ opacity: 1, y: "0px", rotate: 0 }}
@@ -100,12 +101,15 @@ function CardTwo(props) {
             {props.details.name}
           </h1>
           <div className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 h-[90%] p-4 overflow-scroll">
-            <div className="h-[100%] rounded-md">
-              <img
-                className="rounded-md object-cover"
+            <div>
+              <Image
+                className="object-fill rounded-md h-[500px] w-[600px] relative"
                 src={props.details.src}
-              ></img>
+                width={600}
+                height={500}
+              />
             </div>
+
             <div
               className="p-6"
               style={{

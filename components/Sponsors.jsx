@@ -66,13 +66,13 @@ function Sponsors() {
       exit={{ opacity: 0 }}
     >
       <div className="flex flex-col h-screen w-screen space-y-16 w-full mt-40 md:px-4">
-        <div className="flex w-full lg:w-1/2 z-50 lg:m-6">
+        <div className="flex w-full z-50">
           <h1
             style={{
               fontFamily: "valorax Regular",
               fontWeight: "normal",
             }}
-            className="text-5xl md:text-6xl w-full lg:text-8xl lg:ml-10 text-center lg:text-left uppercase text-white font-valorax"
+            className="text-center subheadings w-screen lg:ml-10 text-center uppercase text-white font-valorax"
           >
             sponsors
           </h1>

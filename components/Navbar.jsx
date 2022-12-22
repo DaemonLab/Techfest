@@ -15,10 +15,19 @@ const links = [
 ];
 
 function Navbar() {
+  const [dropdown, setDropdown] = useState("");
   const registerHandler = () => {
     console.log("C");
     alert("Clicked");
   };
+
+  const hoverHandler = (name) => {
+    setDropdown(name);
+  };
+  const hover2Handler = (name) => {
+    setDropdown("");
+  };
+
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -48,6 +57,8 @@ function Navbar() {
               <li
                 className="md:ml-8 text-xl md:my-0 my-7 hover:cursor-pointer"
                 key={link.name}
+                onMouseEnter={() => hoverHandler(link.name)}
+                onMouseLeave={() => hover2Handler()}
               >
                 <Link
                   className="text-[#CAC0B3] hover:text-gray-400 duration-500 font-robotoCondensed "
@@ -63,6 +74,42 @@ function Navbar() {
                   {" "}
                   {link.name}
                 </Link>
+                {link.name === "Events" && (
+                  <motion.div
+                    className={`w-[400px] bg-blue-800 z-[999] absolute ${
+                      dropdown !== "Events" && "hidden"
+                    }`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{
+                      type: "spring",
+                      duration: 2,
+                      bounce: 0.1,
+                    }}
+                  >
+                    <motion.ul
+                      className="text-white w-100 p-4"
+                      style={{
+                        fontFamily: ["JetBrains Mono", "monospace"],
+                        fontSize: "20px",
+                        lineHeight: "1.5",
+                      }}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{
+                        type: "spring",
+                        duration: 2,
+                        bounce: 0.1,
+                      }}
+                    >
+                      <li className="w-100 mb-4 mt-2">Competitions</li>
+                      <li className="w-100 mb-4">Workshops</li>
+                      <li className="w-100 mb-4">Talks</li>
+                    </motion.ul>
+                  </motion.div>
+                )}
               </li>
             ))}
 

@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar";
 import Script from "next/script";
 import Head from "next/head";
 import SEO from "@bradgarropy/next-seo";
+import localFont from "@next/font/local";
+
+const myFont = localFont({ src: "../public/Valorax-lg25V.woff2" });
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -27,7 +30,9 @@ function MyApp({ Component, pageProps }) {
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       ></Script>
-      <Component {...pageProps} />
+      <main className={myFont.className}>
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }
