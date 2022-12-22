@@ -132,7 +132,7 @@ function MainSec() {
             >
               INGENIUM
             </h1>
-            {/* <h1
+            <h1
               className="sec-logo text-9xl font-bold z-50 text-white text-center"
               style={{
                 fontFamily: "valorax Regular",
@@ -140,7 +140,7 @@ function MainSec() {
               }}
             >
               2022-23
-            </h1> */}
+            </h1>
             <motion.div className="h-[50%] p-10 mt-10">
               <motion.h1
                 className="tagline text-white flex items-center justify-center text-center flux3 h-full"

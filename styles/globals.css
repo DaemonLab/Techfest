@@ -11,6 +11,7 @@ body {
   width: 100%;
   height: 100%;
   display: table;
+  transform: scale(1);
   background-color: black;
 }
 
@@ -29,9 +30,9 @@ body {
   font-family: "Debug";
   src: local("Debug"), url("/degug.woff") format("woff");
 }
-@font-face{
+@font-face {
   font-family: "Vampire";
-  src: url("/vampire-wars/vampire_wars.ttf")
+  src: url("/vampire-wars/vampire_wars.ttf");
 }
 
 .main-logo {
@@ -39,13 +40,13 @@ body {
   font-size: 200px;
 }
 
-.subheadings{
+.subheadings {
   font-size: 140px;
   margin-bottom: 100px;
   margin-top: 50px;
 }
 
-.tagline{
+.tagline {
   font-family: "Vampire";
   font-size: 100px !important;
 }
@@ -387,13 +388,12 @@ body {
   .sec-logo {
     font-size: 60px;
   }
-  .tagline{
+  .tagline {
     font-size: 20px !important;
   }
-  .subheadings{
+  .subheadings {
     font-size: 80px;
   }
-  
 }
 
 @media (max-width: 1430px) {
@@ -403,13 +403,12 @@ body {
   .sec-logo {
     font-size: 60px;
   }
-  .tagline{
+  .tagline {
     font-size: 60px !important;
   }
-  .subheadings{
+  .subheadings {
     font-size: 100px;
   }
-  
 }
 
 @media (max-width: 1026px) {
@@ -419,13 +418,12 @@ body {
   .sec-logo {
     font-size: 60px;
   }
-  .tagline{
+  .tagline {
     font-size: 50px !important;
   }
-  .subheadings{
+  .subheadings {
     font-size: 100px;
   }
-  
 }
 @media (max-width: 863px) {
   .main-logo {
@@ -434,13 +432,12 @@ body {
   .sec-logo {
     font-size: 55px;
   }
-  .tagline{
+  .tagline {
     font-size: 50px !important;
   }
-  .subheadings{
+  .subheadings {
     font-size: 100px;
   }
-  
 }
 @media (max-width: 690px) {
   .main-logo {
@@ -449,13 +446,12 @@ body {
   .sec-logo {
     font-size: 45px;
   }
-  .tagline{
+  .tagline {
     font-size: 30px !important;
   }
-  .subheadings{
+  .subheadings {
     font-size: 70px;
   }
-  
 }
 @media (max-width: 400px) {
   .main-logo {
@@ -464,13 +460,12 @@ body {
   .sec-logo {
     font-size: 40px;
   }
-  .tagline{
+  .tagline {
     font-size: 20px !important;
   }
-  .subheadings{
+  .subheadings {
     font-size: 70px;
   }
-  
 }
 .four b {
   font-weight: 700;

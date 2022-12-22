@@ -10,6 +10,9 @@ const myFont = localFont({ src: "../public/Valorax-lg25V.woff2" });
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+      </Head>
       <SEO
         title="Ingenium, IIT Indore"
         description="Technical fest of IIT Indore"

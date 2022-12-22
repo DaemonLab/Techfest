@@ -132,11 +132,11 @@ function About() {
           >
             <ThreeCanvas className="opacity-0.4"></ThreeCanvas>
             <Image
-              className="z-50 h-[100%] w-[100%]"
+              className="z-50 h-[70%] w-[100%] absolute mt-20"
               src="/wordcropped.png"
               alt="An SVG of an eye"
               width={500}
-              height={500}
+              height={400}
             />
           </motion.div>
           <motion.h1
