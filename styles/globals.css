@@ -713,3 +713,21 @@ img {
   display: block;
   margin-right: 30px;
 }
+
+/* Competitions */
+@media (min-width: 1024px) {
+  .h-96-imp{
+    height: 16rem !important;
+    background-image: url("../public/DBZposter.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 800px) {
+  .h-96-imp{
+    height: 13rem !important;
+    background-image: url("../public/DBZposter.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+}
