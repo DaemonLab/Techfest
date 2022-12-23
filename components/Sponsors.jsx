@@ -60,12 +60,12 @@ function Sponsors() {
   return (
     <motion.Reactdiv
       id="sponsors"
-      className="z-0 flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
+      className="z-0 flex items-center justify-center md:h-[1000px] mb-4 lg:mb-0 sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex flex-col h-screen w-screen space-y-16 w-full mt-40 md:px-4">
+      <div className="flex flex-col h-screen w-screen space-y-8 w-full mt-40 md:px-4">
         <div className="flex w-full z-50">
           <h1
             style={{
@@ -144,7 +144,7 @@ function Sponsors() {
               </div>
               <div className="sponsor_text">
                 <h1 className="uppercase text-center text-[#111b53]">
-                  associate sponsor <br></br> Coca Cola
+                  Media sponsor <br></br> Coca Cola
                 </h1>
               </div>
             </div>

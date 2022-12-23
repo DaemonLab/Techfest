@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Carousel from "./Carousel";
 import Box from "@mui/material/Box";
 import Button from "./Button";
 import Typography from "@mui/material/Typography";
