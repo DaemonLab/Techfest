@@ -165,7 +165,7 @@ function MainSec() {
             non ips
           </motion.p> */}
           <div className="mt-8">
-            <Button value="Register" ml="0"></Button>
+            <Button className="registerButton" value="Register" ml="0"></Button>
           </div>
         </div>
       </div>

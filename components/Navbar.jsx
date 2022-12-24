@@ -25,7 +25,7 @@ const links = [
   { name: "Events", link: "#events" },
   { name: "Sponsors", link: "#sponsors" },
   { name: "SnT @IITI", link: "" },
-  { name: "Tech Exihibits", link: "" },
+  { name: "Tech Exihibits", link: " " },
 ];
 
 function Navbar() {
@@ -80,7 +80,7 @@ function Navbar() {
                       <Link
                         className="text-[#CAC0B3] hover:text-gray-400 duration-500 font-robotoCondensed "
                         href={"/" + link.link}
-                        smooth={true}
+                        smooth={"true"}
                         duration={1000}
                         style={{
                           fontFamily: ["JetBrains Mono", "monospace"],
@@ -146,7 +146,7 @@ function Navbar() {
                     <Link
                       className="text-[#CAC0B3] hover:text-gray-400 duration-500 font-robotoCondensed "
                       href={"/" + link.link}
-                      smooth={true}
+                      smooth={"true"}
                       duration={1000}
                       style={{
                         fontFamily: ["JetBrains Mono", "monospace"],
